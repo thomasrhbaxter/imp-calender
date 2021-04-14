@@ -1,0 +1,12 @@
+A:\gregorian to imperial\imperialcalculator\bin\Release\netcoreapp3.1\imperialcalculator.exe
+A:\gregorian to imperial\imperialcalculator\bin\Release\netcoreapp3.1\imperialcalculator.deps.json
+A:\gregorian to imperial\imperialcalculator\bin\Release\netcoreapp3.1\imperialcalculator.runtimeconfig.json
+A:\gregorian to imperial\imperialcalculator\bin\Release\netcoreapp3.1\imperialcalculator.runtimeconfig.dev.json
+A:\gregorian to imperial\imperialcalculator\bin\Release\netcoreapp3.1\imperialcalculator.dll
+A:\gregorian to imperial\imperialcalculator\bin\Release\netcoreapp3.1\imperialcalculator.pdb
+A:\gregorian to imperial\imperialcalculator\obj\Release\netcoreapp3.1\imperialcalculator.AssemblyInfoInputs.cache
+A:\gregorian to imperial\imperialcalculator\obj\Release\netcoreapp3.1\imperialcalculator.AssemblyInfo.cs
+A:\gregorian to imperial\imperialcalculator\obj\Release\netcoreapp3.1\imperialcalculator.dll
+A:\gregorian to imperial\imperialcalculator\obj\Release\netcoreapp3.1\imperialcalculator.pdb
+A:\gregorian to imperial\imperialcalculator\obj\Release\netcoreapp3.1\imperialcalculator.genruntimeconfig.cache
+A:\gregorian to imperial\imperialcalculator\obj\Release\netcoreapp3.1\imperialcalculator.csprojAssemblyReference.cache

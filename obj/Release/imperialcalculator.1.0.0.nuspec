@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>imperialcalculator</id>
+    <version>1.0.0</version>
+    <authors>imperialcalculator</authors>
+    <owners>imperialcalculator</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="A:\gregorian to imperial\imperialcalculator\bin\Release\netcoreapp3.1\imperialcalculator.runtimeconfig.json" target="lib\netcoreapp3.1\imperialcalculator.runtimeconfig.json" />
+    <file src="A:\gregorian to imperial\imperialcalculator\bin\Release\netcoreapp3.1\imperialcalculator.dll" target="lib\netcoreapp3.1\imperialcalculator.dll" />
+  </files>
+</package>
