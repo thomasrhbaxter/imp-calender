@@ -84,6 +84,14 @@ public class Program
         }
 
         int year = Int32.Parse(syear);
+
+        //checks year isnt 0
+        if (year == 0)
+        {
+            Console.WriteLine("please enter a valid year");
+            Console.ReadLine();
+            Main();
+        }
         //works out if year is a leapyear
         var leapyear = 0;
         if (year % 4 == 0 && year % 100 != 0)
