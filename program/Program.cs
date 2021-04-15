@@ -17,6 +17,7 @@ public class Program
         if (!check.Success)
         {
             Console.WriteLine("Please only use the numbers 0-9 and the symbol /");
+            Console.WriteLine("Press enter to continue");
             Console.ReadLine();
             Main();
         }
@@ -26,6 +27,7 @@ public class Program
         if (length <11 || length > 11)
         {
             Console.WriteLine("String too long/short");
+            Console.WriteLine("Press enter to continue");
             Console.ReadLine();
             Main();
         }
@@ -38,6 +40,7 @@ public class Program
         if (!daycheck.Success)
         {
             Console.WriteLine("Please only use the numbers 0-9");
+            Console.WriteLine("Press enter to continue");
             Console.ReadLine();
             Main();
         }
@@ -48,6 +51,7 @@ public class Program
         if (!monthcheck.Success)
         {
             Console.WriteLine("Please only use the numbers 0-9");
+            Console.WriteLine("Press enter to continue");
             Console.ReadLine();
             Main();
         }
@@ -59,6 +63,7 @@ public class Program
         if (!yearcheck.Success)
         {
             Console.WriteLine("Please only use the numbers 0-9");
+            Console.WriteLine("Press enter to continue");
             Console.ReadLine();
             Main();
         }
@@ -70,6 +75,7 @@ public class Program
         if (day >31)
         {
             Console.WriteLine("Day is too large");
+            Console.WriteLine("Press enter to continue");
             Console.ReadLine();
             Main();
         }
@@ -79,6 +85,7 @@ public class Program
         if (month > 12)
         {
             Console.WriteLine("Month is too large");
+            Console.WriteLine("Press enter to continue");
             Console.ReadLine();
             Main();
         }
@@ -89,6 +96,7 @@ public class Program
         if (year == 0)
         {
             Console.WriteLine("please enter a valid year");
+            Console.WriteLine("Press enter to continue");
             Console.ReadLine();
             Main();
         }
@@ -111,6 +119,7 @@ public class Program
                 if (day > 31)
                 {
                     Console.WriteLine("Please enter a valid date");
+                    Console.WriteLine("Press enter to continue");
                     Console.ReadLine();
                     Main();
                 }
@@ -122,6 +131,7 @@ public class Program
                     if(day > 29 || day == 00)
                     {
                         Console.WriteLine("Please enter a valid date");
+                        Console.WriteLine("Press enter to continue");
                         Console.ReadLine();
                         Main();
                     }
@@ -131,6 +141,7 @@ public class Program
                     if (day > 28 || day == 00)
                     {
                         Console.WriteLine("Please enter a valid date");
+                        Console.WriteLine("Press enter to continue");
                         Console.ReadLine();
                         Main();
                     }
@@ -141,6 +152,7 @@ public class Program
                 if (day > 31 || day == 00)
                 {
                     Console.WriteLine("Please enter a valid date");
+                    Console.WriteLine("Press enter to continue");
                     Console.ReadLine();
                     Main();
                 }
@@ -150,6 +162,7 @@ public class Program
                 if (day > 30 || day == 00)
                 {
                     Console.WriteLine("Please enter a valid date");
+                    Console.WriteLine("Press enter to continue");
                     Console.ReadLine();
                     Main();
                 }
@@ -159,6 +172,7 @@ public class Program
                 if (day > 31 || day == 00)
                 {
                     Console.WriteLine("Please enter a valid date");
+                    Console.WriteLine("Press enter to continue");
                     Console.ReadLine();
                     Main();
                 }
@@ -168,6 +182,7 @@ public class Program
                 if (day > 30 || day == 00)
                 {
                     Console.WriteLine("Please enter a valid date");
+                    Console.WriteLine("Press enter to continue");
                     Console.ReadLine();
                     Main();
                 }
@@ -177,6 +192,7 @@ public class Program
                 if (day > 31 || day == 00)
                 {
                     Console.WriteLine("Please enter a valid date");
+                    Console.WriteLine("Press enter to continue");
                     Console.ReadLine();
                     Main();
                 }
@@ -186,6 +202,7 @@ public class Program
                 if (day > 31 || day == 00)
                 {
                     Console.WriteLine("Please enter a valid date");
+                    Console.WriteLine("Press enter to continue");
                     Console.ReadLine();
                     Main();
                 }
@@ -195,6 +212,7 @@ public class Program
                 if (day > 30 || day == 00)
                 {
                     Console.WriteLine("Please enter a valid date");
+                    Console.WriteLine("Press enter to continue");
                     Console.ReadLine();
                     Main();
                 }
@@ -204,6 +222,7 @@ public class Program
                 if (day > 31 || day == 00)
                 {
                     Console.WriteLine("Please enter a valid date");
+                    Console.WriteLine("Press enter to continue");
                     Console.ReadLine();
                     Main();
                 }
@@ -213,6 +232,7 @@ public class Program
                 if (day > 30 || day == 00)
                 {
                     Console.WriteLine("Please enter a valid date");
+                    Console.WriteLine("Press enter to continue");
                     Console.ReadLine();
                     Main();
                 }
@@ -222,6 +242,7 @@ public class Program
                 if (day > 31 || day == 00)
                 {
                     Console.WriteLine("Please enter a valid date");
+                    Console.WriteLine("Press enter to continue");
                     Console.ReadLine();
                     Main();
                 }
@@ -229,6 +250,7 @@ public class Program
                 break;
             default:
                 Console.WriteLine("Please enter a valid date");
+                Console.WriteLine("Press enter to continue");
                 Console.ReadLine();
                 Main();
                 break;
@@ -241,12 +263,22 @@ public class Program
         Console.WriteLine("What time did the event happen, use 24 hour time format to the nearest hour");
         string hour = Console.ReadLine();
         int hourofday = 0;
+
+        int hourlength = hour.Length;
+        if (hourlength > 2)
+        {
+            Console.WriteLine("please enter a valid time");
+            Console.WriteLine("Press enter to continue");
+            Console.ReadLine();
+            Main();
+        }
         //makes sure the hour only has numbers
         var hourcheck = Regex.Match(hour, regex, RegexOptions.IgnoreCase);
 
         if (!hourcheck.Success)
         {
             Console.WriteLine("Please only use the numbers 0-9");
+            Console.WriteLine("Press enter to continue");
             Console.ReadLine();
             Main();
         }
@@ -259,6 +291,9 @@ public class Program
             if (hourofday > 23)
         {
             Console.WriteLine("Please enter a time between 0 and 23");
+            Console.WriteLine("Press enter to continue");
+            Console.ReadLine();
+            Main();
         }
             
                 //makr constant is used to convert the determined hour into a year fraction (x/1000)
