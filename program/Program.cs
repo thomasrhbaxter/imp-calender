@@ -111,7 +111,7 @@ public class Program
             case 2: //february
                 if (leapyear == 1)
                 {
-                    if(day > 29)
+                    if(day > 29 || day == 00)
                     {
                         Console.WriteLine("Please enter a valid date");
                         Console.ReadLine();
@@ -120,7 +120,7 @@ public class Program
                 }
                 else
                 {
-                    if (day > 28)
+                    if (day > 28 || day == 00)
                     {
                         Console.WriteLine("Please enter a valid date");
                         Console.ReadLine();
@@ -130,7 +130,7 @@ public class Program
                 dayofyear = 31 + day;
                 break;
             case 3: // march
-                if (day > 31)
+                if (day > 31 || day == 00)
                 {
                     Console.WriteLine("Please enter a valid date");
                     Console.ReadLine();
@@ -139,7 +139,7 @@ public class Program
                 dayofyear = 59 + day + leapyear;
                 break;
             case 4: //april
-                if (day > 30)
+                if (day > 30 || day == 00)
                 {
                     Console.WriteLine("Please enter a valid date");
                     Console.ReadLine();
@@ -148,7 +148,7 @@ public class Program
                 dayofyear = 90 + day + leapyear;
                 break;
             case 5: //may
-                if (day > 31)
+                if (day > 31 || day == 00)
                 {
                     Console.WriteLine("Please enter a valid date");
                     Console.ReadLine();
@@ -157,7 +157,7 @@ public class Program
                 dayofyear = 120 + day + leapyear;
                 break;
             case 6: //june
-                if (day > 30)
+                if (day > 30 || day == 00)
                 {
                     Console.WriteLine("Please enter a valid date");
                     Console.ReadLine();
@@ -166,7 +166,7 @@ public class Program
                 dayofyear = 151 + day + leapyear;
                 break;
             case 7: //july
-                if (day > 31)
+                if (day > 31 || day == 00)
                 {
                     Console.WriteLine("Please enter a valid date");
                     Console.ReadLine();
@@ -175,7 +175,7 @@ public class Program
                 dayofyear = 181 + day + leapyear;
                 break;
             case 8: //august
-                if (day > 31)
+                if (day > 31 || day == 00)
                 {
                     Console.WriteLine("Please enter a valid date");
                     Console.ReadLine();
@@ -184,7 +184,7 @@ public class Program
                 dayofyear = 212 + day + leapyear;
                 break;
             case 9: //september
-                if (day > 30)
+                if (day > 30 || day == 00)
                 {
                     Console.WriteLine("Please enter a valid date");
                     Console.ReadLine();
@@ -193,7 +193,7 @@ public class Program
                 dayofyear = 243 + day + leapyear;
                 break;
             case 10: //october
-                if (day > 31)
+                if (day > 31 || day == 00)
                 {
                     Console.WriteLine("Please enter a valid date");
                     Console.ReadLine();
@@ -202,7 +202,7 @@ public class Program
                 dayofyear = 273 + day + leapyear;
                 break;
             case 11: //november
-                if (day > 30)
+                if (day > 30 || day == 00)
                 {
                     Console.WriteLine("Please enter a valid date");
                     Console.ReadLine();
@@ -211,7 +211,7 @@ public class Program
                 dayofyear = 304 + day + leapyear;
                 break;
             case 12: //december
-                if (day > 31)
+                if (day > 31 || day == 00)
                 {
                     Console.WriteLine("Please enter a valid date");
                     Console.ReadLine();
@@ -219,6 +219,12 @@ public class Program
                 }
                 dayofyear = 334 + day + leapyear;
                 break;
+            default:
+                Console.WriteLine("Please enter a valid date");
+                Console.ReadLine();
+                Main();
+                break;
+
         }
 
 
