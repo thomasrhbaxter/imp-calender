@@ -10,3 +10,16 @@ A:\gregorian to imperial\imperialcalculator\obj\x64\Test\netcoreapp3.1\imperialc
 A:\gregorian to imperial\imperialcalculator\obj\x64\Test\netcoreapp3.1\imperialcalculator.dll
 A:\gregorian to imperial\imperialcalculator\obj\x64\Test\netcoreapp3.1\imperialcalculator.pdb
 A:\gregorian to imperial\imperialcalculator\obj\x64\Test\netcoreapp3.1\imperialcalculator.genruntimeconfig.cache
+A:\gregorian to imperial\imperialcalculator\imp-calender\program\bin\x64\Test\netcoreapp3.1\imperialcalculator.exe
+A:\gregorian to imperial\imperialcalculator\imp-calender\program\bin\x64\Test\netcoreapp3.1\imperialcalculator.deps.json
+A:\gregorian to imperial\imperialcalculator\imp-calender\program\bin\x64\Test\netcoreapp3.1\imperialcalculator.runtimeconfig.json
+A:\gregorian to imperial\imperialcalculator\imp-calender\program\bin\x64\Test\netcoreapp3.1\imperialcalculator.runtimeconfig.dev.json
+A:\gregorian to imperial\imperialcalculator\imp-calender\program\bin\x64\Test\netcoreapp3.1\imperialcalculator.dll
+A:\gregorian to imperial\imperialcalculator\imp-calender\program\bin\x64\Test\netcoreapp3.1\imperialcalculator.pdb
+A:\gregorian to imperial\imperialcalculator\imp-calender\program\obj\x64\Test\netcoreapp3.1\imperialcalculator.csprojAssemblyReference.cache
+A:\gregorian to imperial\imperialcalculator\imp-calender\program\obj\x64\Test\netcoreapp3.1\imperialcalculator.AssemblyInfoInputs.cache
+A:\gregorian to imperial\imperialcalculator\imp-calender\program\obj\x64\Test\netcoreapp3.1\imperialcalculator.AssemblyInfo.cs
+A:\gregorian to imperial\imperialcalculator\imp-calender\program\obj\x64\Test\netcoreapp3.1\imperialcalculator.csproj.CoreCompileInputs.cache
+A:\gregorian to imperial\imperialcalculator\imp-calender\program\obj\x64\Test\netcoreapp3.1\imperialcalculator.dll
+A:\gregorian to imperial\imperialcalculator\imp-calender\program\obj\x64\Test\netcoreapp3.1\imperialcalculator.pdb
+A:\gregorian to imperial\imperialcalculator\imp-calender\program\obj\x64\Test\netcoreapp3.1\imperialcalculator.genruntimeconfig.cache

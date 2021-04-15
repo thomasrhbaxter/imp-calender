@@ -30,9 +30,40 @@ public class Program
             Main();
         }
         string sday = fulldate.Substring(0, 2);
+
+        var regex = "^[0-9]*$";
+        var daycheck = Regex.Match(sday, regex, RegexOptions.IgnoreCase);
+
+        if (!daycheck.Success)
+        {
+            Console.WriteLine("Please only use the numbers 0-9");
+            Console.ReadLine();
+            Main();
+        }
+
         string smonth = fulldate.Substring(3, 2);
+        var monthcheck = Regex.Match(smonth, regex, RegexOptions.IgnoreCase);
+
+        if (!monthcheck.Success)
+        {
+            Console.WriteLine("Please only use the numbers 0-9");
+            Console.ReadLine();
+            Main();
+        }
+
         string syear = fulldate.Substring(6, 5);
-            //converts input to integer
+
+        var yearcheck = Regex.Match(syear, regex, RegexOptions.IgnoreCase);
+
+        if (!yearcheck.Success)
+        {
+            Console.WriteLine("Please only use the numbers 0-9");
+            Console.ReadLine();
+            Main();
+        }
+
+
+        //converts input to integer
         int day = Int32.Parse(sday);
 
         if (day >31)
@@ -63,13 +94,7 @@ public class Program
             leapyear = 1;
         }
 
-        if (day >= 29 && month == 2 && leapyear == 0)
-        {
-            Console.WriteLine("Please enter a valid date");
-            Console.ReadLine();
-            Main();
-        }
-
+        //uses input to work out the day of the year and makes sure dates are valid
         var dayofyear = 0;
         switch (month)
         {
@@ -194,17 +219,17 @@ public class Program
                 dayofyear = 334 + day + leapyear;
                 break;
         }
-        //uses input to work out the day of the year
+
 
         //Console.WriteLine(dayofyear);
 
         Console.WriteLine("What time did the event happen, use 24 hour time format to the nearest hour");
         string hour = Console.ReadLine();
         int hourofday = 0;
-        var regex = "^[0-9]*$";
-        var match = Regex.Match(hour, regex, RegexOptions.IgnoreCase);
+        //makes sure the hour only has numbers
+        var hourcheck = Regex.Match(hour, regex, RegexOptions.IgnoreCase);
 
-        if (!match.Success)
+        if (!hourcheck.Success)
         {
             Console.WriteLine("Please only use the numbers 0-9");
             Console.ReadLine();
