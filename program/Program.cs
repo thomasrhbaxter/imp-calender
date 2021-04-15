@@ -21,7 +21,7 @@ public class Program
             Main();
         }
 
-
+        //makes sure input is the right length
         int length = fulldate.Length;
         if (length <11 || length > 11)
         {
@@ -29,6 +29,7 @@ public class Program
             Console.ReadLine();
             Main();
         }
+        //splits string into day month and year and checks that they are all valid integers
         string sday = fulldate.Substring(0, 2);
 
         var regex = "^[0-9]*$";
